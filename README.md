@@ -52,7 +52,10 @@ the table, it is not moved.
 
 # Run project 
 
-```node index.js input.csv  output.csv```
+```
+npm i
+node index.js input.csv  output.csv
+```
 
 ps: input.csv is present in the root of the project directory.
     output.csv is the name of the output file where the results are added once the process starts. It will be deleted before the start of the next process, so that we dont append new data in old files.
