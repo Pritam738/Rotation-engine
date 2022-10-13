@@ -57,4 +57,6 @@ the table, it is not moved.
 ps: input.csv is present in the root of the project directory.
     output.csv is the name of the output file where the results are added once the process starts. I will be deleted before the start of the next process, so that we dont append new data in old files.
 
+We are useing read and write streams to read and write the csv data.
+
  

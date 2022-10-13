@@ -1,3 +1,4 @@
+// helper function to convert a flat list into a square matrix.
 function listMatrixConversion( data, count ){
     let matrixified = [];
     let tmp;
@@ -13,10 +14,12 @@ function listMatrixConversion( data, count ){
     return matrixified;
 }
 
+// helper function to check if the number is a perfect square.
 const isSquare = function (n) {
     return n > 0 && Math.sqrt(n) % 1 === 0;
 };
 
+// helper function to convert rotate the square matrix by one place and flaten it.
 function rotatematrix(mat){
 	let row = 0, col = 0;
 	let prev, curr;
