@@ -4,7 +4,7 @@ Given a CSV file representing a series of tables, implement a rotation engine th
 The input file is the first and only argument to the program. Output should be
 written to stdout (aka printed to the screen).
 
-#Input
+# Input
 
 The input will be a CSV file with the columns id and json. You can assume id
 to be a string and json to be a string (JSON encoded data).
@@ -19,7 +19,7 @@ id,json
 8,"[1, 1, 1, 1, 1]”
 ```
 
-#Output
+# Output
 
 The output should be a CSV-encoded series of rotated tables with the
 columns id, json and is_valid. The latter is an indicator of whether or not
@@ -35,7 +35,7 @@ id,json,is_valid
 8,”[]",false
 ```
 
-#Theory
+# Theory
 
 You work with a list of numbers that represent a table your program has to
 interpret correctly. Since there is nothing but a flat list, the program has to
