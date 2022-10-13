@@ -8,7 +8,7 @@ let writer = csvWriter()
 
 function verifyInputParams(args){
     const pattern = /.*\.csv$/;
-    if(args.length !== 2 || !pattern.test(args[0]) || !pattern.test(args[1])){
+    if(args.length !== 2 || !pattern.test(args[0]) || !pattern.test(args[1]) || args[0] === args[1]){
         console.log('please provide valid input params')
         return false
     }
@@ -44,9 +44,7 @@ function processCsvFile(inputFile, outputFile){
                 }
             })
             .on('end',function() {
-                console.log(`input file ${inputFile}, is parsed.`)
                 writer.end();
-                console.log(`results are updated in ${outputFile} file.`)
             })
             .on("error", function (error) {
                 console.log(error.message);
@@ -56,3 +54,5 @@ function processCsvFile(inputFile, outputFile){
 
 
 verifyInputParams(args)
+
+module.exports = verifyInputParams
