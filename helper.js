@@ -19,11 +19,11 @@ const isSquare = function (n) {
     return n > 0 && Math.sqrt(n) % 1 === 0;
 };
 
-// helper function to convert rotate the square matrix by one place and flaten it.
+// helper function to rotate the square matrix by one place and flaten it.
 function rotatematrix(mat){
 	let row = 0, col = 0;
 	let prev, curr;
-    let m = n = mat.length
+        let m = n = mat.length
 	while (row < m && col < n){
 		if (row + 1 == m || col + 1 == n)
 			break;
