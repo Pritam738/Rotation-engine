@@ -46,3 +46,15 @@ the table, it is not moved.
 ![Screenshot 2022-10-13 132748](https://user-images.githubusercontent.com/10485635/195536962-f6a7bb6b-17ab-4332-90a1-aa0f519534e5.png)
 
 
+# Run test cases 
+
+```npm run test```
+
+# Run project 
+
+```node index.js input.csv  output.csv```
+
+ps: input.csv is present in the root of the project directory.
+    output.csv is the name of the output file where the results are added once the process starts. I will be deleted before the start of the next process, so that we dont append new data in old files.
+
+ 
