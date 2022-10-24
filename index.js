@@ -1,5 +1,5 @@
-let fs = require('fs'); 
-let { parse } = require('csv-parse');
+const fs = require('fs'); 
+const { parse } = require('csv-parse');
 const csvWriter = require('csv-write-stream');
 const { listMatrixConversion, rotatematrix, isSquare } = require('./helper');
 const args = process.argv.slice(2);
